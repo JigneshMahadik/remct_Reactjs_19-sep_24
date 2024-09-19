@@ -37,7 +37,6 @@ function App() {
           }}
         >
           {({ isSubmitting, isValid, values, errors }) => {
-            console.log("Current Errors:", errors);
             return (
               <Form className="form-content">
                 <div className="form-field">
