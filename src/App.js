@@ -7,7 +7,7 @@ import bg from "./images/bg.jpg";
 
 const validationSchema = Yup.object({
   name: Yup.string().required('Please enter your name'),
-  email: Yup.string().email('Invalid email format').required('Email is required'),
+  email: Yup.string().email('Email format should be "Jack@gmail.com"').required('Email is required'),
   password: Yup.string()
     .matches(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/, 
       'Password must start with r__M_9')
